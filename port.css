@@ -1,77 +1,68 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #1d1b1b;
   margin: 0;
   padding: 0;
-  background: #f4f4f4;
 }
 
 .container {
-  max-width: 1200px;
-  margin: 30px auto;
-  padding: 20px;
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h2 {
   text-align: center;
-}
-
-.logo {
-  width: 100px;
-  margin-bottom: 10px;
-}
-
-h1 {
-  font-size: 2.5rem;
   color: #333;
   margin-bottom: 30px;
 }
 
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
-.card {
-  background: #fff;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-}
-
-.card h2 {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-  color: #222;
-}
-
-.card ul {
-  list-style: none;
-  padding: 0;
-  margin-bottom: 15px;
-  text-align: left;
-}
-
-.card ul li {
+.form-group label {
   margin-bottom: 5px;
-  font-size: 0.95rem;
-  color: #555;
+  font-weight: 500;
 }
 
-.btn {
-  text-decoration: none;
-  background: #007bff;
+.form-group input,
+.form-group select {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.checkbox {
+  flex-direction: row;
+  align-items: center;
+}
+
+button {
+  padding: 12px;
+  font-size: 1rem;
+  background-color: #0759b8;
   color: white;
-  padding: 10px 20px;
+  border: none;
   border-radius: 6px;
-  font-weight: bold;
-  display: inline-block;
+  cursor: pointer;
   transition: background 0.3s;
 }
 
-.btn:hover {
-  background: #0056b3;
+button:hover {
+  background-color: #0759b8;
 }
